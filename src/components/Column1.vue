@@ -11,6 +11,7 @@ export default {
         dribbble: simpleIcons.Get("dribbble").svg,
         stackoverflow: simpleIcons.Get("stackoverflow").svg,
         youtube: simpleIcons.Get("youtube").svg,
+        twitter: simpleIcons.Get("twitter").svg, // Add this line!
       },
     };
   },
@@ -20,150 +21,79 @@ export default {
 <template>
   <div class="column">
     <div class="center">
-      <h1>Hi, I'm Micah</h1>
+      <h1>Hi, I'm sharma01ketan</h1><br/>
       <p>
-        I've been building things on the Internet since 2015, and I'm
-        experienced with languages and frameworks like
+        I am a Software Engineer at 
+        <a
+          href="http://plane.so/"
+          @mouseenter="$emit('hoverIn')"
+          @mouseleave="$emit('hoverOut')"
+          >Plane.so</a
+        > since graduating from my alma mater, NIT Srinagar, last year.<br/><br/>
+        I have experience in Full-Stack development, DevOps, and Generative AIs, with contributions to open-source projects. <br/><br/>
+        Passionate about everything software, 
+        I work with 
         <a
           href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
           @mouseenter="$emit('hoverIn')"
           @mouseleave="$emit('hoverOut')"
-          >JavaScript</a
-        >,
+          >JavaScript,
+        </a> 
         <a
-          href="https://ionicframework.com/"
+          href="https://nextjs.org/"
           @mouseenter="$emit('hoverIn')"
           @mouseleave="$emit('hoverOut')"
-          >Ionic</a
-        >,
+          >Next.js</a
+        >, 
         <a
-          href="https://vuejs.org"
+          href="https://mobx.js.org/README.html"
           @mouseenter="$emit('hoverIn')"
           @mouseleave="$emit('hoverOut')"
-          >Vue</a
-        >,
+          >Mobx</a
+        >, and 
         <a
-          href="https://reactjs.org/"
+          href="https://www.docker.com/ "
           @mouseenter="$emit('hoverIn')"
           @mouseleave="$emit('hoverOut')"
-          >React</a
-        >,
+          >cloud technologies
+          </a
+        >.<br/><br/>
+        Aside from web development, I'm a Java-loving ❤️ LeetCode monkey who enjoys reading non-fiction books in his free time. 
+        <br/> <br/>
+        While you're here, feel free to check out my 
         <a
-          href="https://svelte.dev/"
-          @mouseenter="$emit('hoverIn')"
-          @mouseleave="$emit('hoverOut')"
-          >Svelte</a
-        >,
-        <a
-          href="https://nodejs.org/"
-          @mouseenter="$emit('hoverIn')"
-          @mouseleave="$emit('hoverOut')"
-          >Node.js</a
-        >,
-        <a
-          href="https://sass-lang.com/"
-          @mouseenter="$emit('hoverIn')"
-          @mouseleave="$emit('hoverOut')"
-          >Sass</a
-        >,
-        <a
-          href="https://nativescript.org/"
-          @mouseenter="$emit('hoverIn')"
-          @mouseleave="$emit('hoverOut')"
-          >NativeScript</a
-        >,
-        <a
-          href="https://www.electronjs.org/"
-          @mouseenter="$emit('hoverIn')"
-          @mouseleave="$emit('hoverOut')"
-          >Electron</a
-        >,
-        <a
-          href="https://socket.io/"
-          @mouseenter="$emit('hoverIn')"
-          @mouseleave="$emit('hoverOut')"
-          >Socket.io</a
-        >, and
-        <a
-          href="https://vitejs.dev/"
-          @mouseenter="$emit('hoverIn')"
-          @mouseleave="$emit('hoverOut')"
-          >Vite</a
-        >.<br /><br />
-        Aside from web development, I dabble in 3D design and do freelance
-        branding and print design. I'm currently attending
-        <a
-          href="https://mc.edu"
-          @mouseenter="$emit('hoverIn')"
-          @mouseleave="$emit('hoverOut')"
-          >Mississippi College</a
-        >
-        studying computer information systems. When I have free time, you can
-        find me making
-        <a
-          href="https://soundcloud.com/micahlt"
-          @mouseenter="$emit('hoverIn')"
-          @mouseleave="$emit('hoverOut')"
-          >digital music</a
-        >, producing a video for my
-        <a
-          href="https://www.youtube.com/@micahlindley"
-          @mouseenter="$emit('hoverIn')"
-          @mouseleave="$emit('hoverOut')"
-          >YouTube channel</a
-        >, or hosting an episode of
-        <a
-          href="https://bio.link/tnc"
-          @mouseenter="$emit('hoverIn')"
-          @mouseleave="$emit('hoverOut')"
-          >The New Creators</a
-        >
-        podcast.<br /><br />
-        While you're here, feel free to check out my
-        <router-link
-          to="/projects"
+          href="https://github.com/sharma01ketan"
           @mouseenter="$emit('hoverIn')"
           @mouseleave="$emit('hoverOut')"
           class="special-link"
-          >projects</router-link
-        >
-        or
-        <router-link
-          to="/contact"
+          >projects
+        </a> 
+        or 
+        <a
+          href="https://www.linkedin.com/in/sharma01ketan/"
           @mouseenter="$emit('hoverIn')"
           @mouseleave="$emit('hoverOut')"
           class="special-link"
-          >get in touch</router-link
-        >.
+          >get in touch
+        </a>.
+      
       </p>
       <div class="socials">
         <a
           v-html="i.linkedin"
-          href="https://www.linkedin.com/in/micahlt"
+          href="https://www.linkedin.com/in/sharma01ketan/"
           @mouseenter="$emit('hoverIn')"
           @mouseleave="$emit('hoverOut')"
         ></a>
         <a
           v-html="i.github"
-          href="https://github.com/micahlt"
+          href="https://github.com/sharma01ketan"
           @mouseenter="$emit('hoverIn')"
           @mouseleave="$emit('hoverOut')"
         ></a>
         <a
-          v-html="i.dribbble"
-          href="https://dribbble.com/micahlt"
-          @mouseenter="$emit('hoverIn')"
-          @mouseleave="$emit('hoverOut')"
-        ></a>
-        <a
-          v-html="i.stackoverflow"
-          href="https://stackoverflow.com/users/10806546"
-          @mouseenter="$emit('hoverIn')"
-          @mouseleave="$emit('hoverOut')"
-        ></a>
-        <a
-          v-html="i.youtube"
-          href="https://www.youtube.com/@micahlindley.com"
+          v-html="i.twitter"
+          href="https://x.com/sharma01ketan"
           @mouseenter="$emit('hoverIn')"
           @mouseleave="$emit('hoverOut')"
         ></a>
