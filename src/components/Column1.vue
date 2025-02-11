@@ -28,10 +28,10 @@ export default {
           href="http://plane.so/"
           @mouseenter="$emit('hoverIn')"
           @mouseleave="$emit('hoverOut')"
-          >Plane.so</a
-        > since graduating from my alma mater, NIT Srinagar, last year.<br/><br/>
+          >Plane</a
+        > since graduating from NIT Srinagar, with a Bachelor of Technology in Information Technology.<br/><br/>
         I have experience in Full-Stack development, DevOps, and Generative AIs, with contributions to open-source projects. <br/><br/>
-        Passionate about everything software, 
+        Passionate about engineering software, 
         I work with 
         <a
           href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
