@@ -6,7 +6,7 @@ import siStackoverflow from "simple-icons/icons/stackoverflow";
 import siYoutube from "simple-icons/icons/youtube";
 import siTwitter from "simple-icons/icons/twitter";
 export default {
-  title: "Column1",
+  title: "Plane2",
   emits: ["hoverIn", "hoverOut"],
   data() {
     return {
@@ -26,7 +26,8 @@ export default {
 <template>
   <div class="column">
     <div class="center">
-      <h1>Hi, I'm sharma01ketan</h1><br class="manage-mobile"/>
+      <h1>Software Engineer</h1><br/>
+      <h2>Aug 2024 - Present</h2>
       <p>
         I am a Software Engineer at 
         <a
@@ -34,17 +35,13 @@ export default {
           @mouseenter="$emit('hoverIn')"
           @mouseleave="$emit('hoverOut')"
           >Plane</a
-        > since graduating from NIT Srinagar, with a Bachelor of Technology in Information Technology.<br/><br/>
-        I have experience in Full-Stack development, Generative AIs, and DevOps, with contributions to open-source projects. <br/><br/>
-        <p class="manage-mobile">
-        Passionate about engineering software, 
-        I work with 
-        <a
+        > I work with <a
           href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
           @mouseenter="$emit('hoverIn')"
           @mouseleave="$emit('hoverOut')"
           >JavaScript,
-        </a> 
+        </a> .<br/><br/>
+        
         <a
           href="https://nextjs.org/"
           @mouseenter="$emit('hoverIn')"
@@ -63,9 +60,6 @@ export default {
           @mouseleave="$emit('hoverOut')"
           >cloud technologies</a>
         .<br/><br/>
-        Aside from web development, I'm a Java-loving ❤️ LeetCode monkey who enjoys reading non-fiction books in his free time. 
-        <br/> <br/>
-      </p>
         While you're here, feel free to check out my 
         <router-link
           to="/projects"
@@ -81,6 +75,7 @@ export default {
           @mouseleave="$emit('hoverOut')"
           class="special-link"
           >get in touch</a>.
+      
       </p>
       <div class="socials">
         <a
@@ -134,6 +129,16 @@ h1 {
   animation-delay: 0.1s;
 }
 
+h2 {
+  color: var(--accent);
+  opacity: 0;
+  transform-style: preserve-3d;
+  transform-origin: top center;
+  transform: var(--animation-initial);
+  animation: var(--animation);
+  animation-delay: 0.1s;
+}
+
 p {
   opacity: 0;
   transform-style: preserve-3d;
@@ -179,9 +184,6 @@ p > a {
 @media only screen and (max-width: 510px) {
   h1 {
     font-size: 2.5rem;
-  }
-  .manage-mobile {
-    display: none;
   }
 }
 </style>
