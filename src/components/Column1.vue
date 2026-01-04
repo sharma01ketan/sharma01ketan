@@ -30,10 +30,10 @@ export default {
       <p>
         I am a Software Engineer at 
         <a
-          href="http://plane.so/"
+          href="https://www.spyne.ai/"
           @mouseenter="$emit('hoverIn')"
           @mouseleave="$emit('hoverOut')"
-          >Plane</a
+          >Spyne</a
         > since graduating from NIT Srinagar, with a Bachelor of Technology in Information Technology.<br/><br/>
         I have experience in Full-Stack development, Generative AIs, and DevOps, with contributions to open-source projects. <br/><br/>
         Passionate about engineering software, 
