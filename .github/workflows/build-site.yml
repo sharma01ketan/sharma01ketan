@@ -37,3 +37,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           message: "Build site"
           branch: "master"
+          force: true
