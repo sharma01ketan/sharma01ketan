@@ -5,6 +5,7 @@ import siDribbble from "simple-icons/icons/dribbble";
 import siStackoverflow from "simple-icons/icons/stackoverflow";
 import siYoutube from "simple-icons/icons/youtube";
 import siTwitter from "simple-icons/icons/twitter";
+
 export default {
   title: "Column1",
   emits: ["hoverIn", "hoverOut"],
