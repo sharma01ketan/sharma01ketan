@@ -2,6 +2,9 @@ name: Build Vite Site
 
 on: [push, pull_request]
 
+permissions:
+  contents: write
+
 jobs:
   prepare_tools:
     name: Prepare tools for build
@@ -10,7 +13,6 @@ jobs:
       - name: Get code from the current repository
         uses: actions/checkout@v2
         with:
-          persist-credentials: false
           fetch-depth: 0
 
       - name: Reconfigure git to use HTTP
