@@ -11,9 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Get code from the current repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          persist-credentials: true
 
       - name: Reconfigure git to use HTTP
         run: >
@@ -21,7 +22,7 @@ jobs:
           ssh://git@github.com/
 
       - name: Install Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
           node-version: "16"
 
@@ -36,5 +37,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           message: "Build site"
-          branch: "master"
+          branch: "main"
           force: true
