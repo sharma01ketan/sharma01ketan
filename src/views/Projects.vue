@@ -144,6 +144,14 @@ export default {
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
 }
 
+.project h2 {
+  color: var(--text-primary);
+  position: relative;
+  margin-right: 0;
+  width: max-content;
+  transition: color 0.2s;
+}
+
 .project-image.skeleton {
   position: relative;
   overflow: hidden;
